@@ -1,0 +1,3 @@
+https://www.kaggle.com/datasets/rajeevw/ufcdata
+https://www.kaggle.com/datasets/maksbasher/ufc-complete-dataset-all-events-1996-2024/data
+https://skonkalmatt.github.io/UFC_Data_Analysis/

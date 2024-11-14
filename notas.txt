@@ -1,0 +1,8 @@
+Primera Idea:
+-Enfrentamientos: ver que peso tienen cada metricas en todas las vistorias, para hcer luego un calculo ponderado,
+para poder predecir que media tendra cada uno y luego pasarlo por un filtro para saber si ganara o no
+
+-hacer un estudio de outlayers de cada metrica
+
+
+pytacho vs el pequeño jhon
