@@ -5,7 +5,7 @@ import numpy as np
 from datetime import datetime
 
 
-with open('../notebooks/ufc_model.pkl', 'rb') as f:
+with open('../models/ufc_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 
