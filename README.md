@@ -1,72 +1,136 @@
-<div style="text-align: center;">
-  <img src="data/images/PyTachoSA.webp" alt="PyTachoSA" />
-</div>
-
-&nbsp;
-
-<h1 style="text-align: center;">🌱 Proyecto de Mejora en el Proceso de Selección de Pistachos 🌱</h1>
-
-**PyTachos S.A.** es mi empresa ubicada en Mérida, dedicada al procesamiento y selección de pistachos de alta calidad.  
-Hemos abierto una nueva línea de inversión para mejorar la **CLASIFICACIÓN** de nuestros productos.
-
-&nbsp;
-
-🔍 **Disponemos de un óptico láser** que actualmente solo contabiliza la **CANTIDAD** de pistachos que pasan por las cintas transportadoras.
+#  **Predicción de Duración de Combates en UFC 🥋**
 
 <div style="text-align: center;">
-  <img src="data/images/optico.png" alt="Optico_separador" />
+  <img src="data/images/ilia_vs_Max.png" alt="Heat_map_correlaciones" />
 </div>
 
-&nbsp;  
+## ✍️ **Descripción del Proyecto**
 
-## ¿Handicap?
+En este proyecto, desarrollamos un modelo de **Machine Learning** para predecir de manera precisa cuántos **rounds** y **minutos adicionales** tendrá un combate.  
 
-Compramos pistachos de alta calidad en Turquía, pero el **PROBLEMA** surge cuando recibimos dos variedades muy similares mezcladas cuando se hace la compra al por mayor.
+Utilizamos un dataset de **Kaggle** con **7,600 registros** y **18 variables**, que incluye información sobre enfrentamientos de peleadores y métricas relacionadas.  
 
-<h2 style="text-align: center;">🥜 Tipo de pistachos 🥜</h2>
-
- <div style="text-align: center;">
-  <img src="data/images/tabla_pistachos.png" alt="Tabla_detalles_Pistachos" />
-</div>
-
-&nbsp;
-
-✨ Queremos implementar un modelo de **machine learning** para tener una buena detección de las variedades específicas de pistachos que compramos.
-
-&nbsp;
-
-## 🔬 ¿Cómo obtenemos las métricas del pistacho?
-- Mediante el **PROCESADO DE IMAGEN** que nos proporciona el óptico, obtenemos métricas detalladas como ancho, largo, ángulo, etc.
+📊 Aplicamos **técnicas de Feature Engineering** para mejorar las variables predictoras y visualizamos las correlaciones entre estas utilizando el coeficiente de **Pearson**.
 
 <div style="text-align: center;">
-  <img src="data/images/dimensiones_pistacho.png" alt="Dimensiones_pistacho" />
+  <img src="data/images/heatmap_sin_fondo.png" alt="Heat_map_correlaciones" />
 </div>
+---
 
-## ¿Hay correlación entre las variables? 📊
+## 🚀 **Modelos Entrenados**
+
+Probamos múltiples algoritmos para seleccionar el modelo con el **MAE (Mean Absolute Error)** más bajo posible.  
+
+### ✅ **Modelos Supervisados**
+- 🤖 **Red Neuronal**  
+- 🌟 **XGBoost Tuned**  
+- 🌳 **Random Forest Regressor**  
+- ⚡ **LightGBM**  
+- 📈 **Gradient Boosting Regressor**  
+- 🧠 **Support Vector Machine**  
+- 🌲 **Decision Tree Regressor**  
+- 🧮 **Linear Regression**  
+- 🔗 **Ridge Regressor**
+
+### 🔍 **Modelos No Supervisados**
+- 🔗 **K-Means**  
+- 📊 **PCA (Análisis de Componentes Principales)**
 
 <div style="text-align: center;">
-  <img src="data/images/heatmap_pistachos.png" alt="Heat_map_correlaciones" />
+  <img src="data/images/comparaciones_mae.png" alt="Heat_map_correlaciones" />
 </div>
 
-## Roadmap del proyecto
+---
 
-1. **📈 Recopilación de Datos**: Captura de datos con el óptico.
-2. **🧹 Preprocesamiento de Datos**: Limpieza de datos y agrupación.
-3. **🤖 Entrenamiento del Modelo**: Pruebas con diferentes pipelines de machine learning.
-4. **⚙️ Implementación**: Desarrollo e integración del software.
+## 🏆 **Modelo Final Seleccionado**  
+Finalmente, seleccionamos un 🌳 **Random Forest Regressor** como el modelo con mejor desempeño.  
+Adjuntamos la línea de tendencia enfrentando el valore real respecto al predicho.
 
-## ✨ Conclusión
+<div style="text-align: center;">
+  <img src="data/images/prediccion_modelo.png" alt="Heat_map_correlaciones" />
+</div>
 
-- Con la integración del modelo de machine learning, **PyTachos S.A.** se posicionará a la vanguardia en la industria de selección de pistachos, ofreciendo dos líneas de productos de la más alta calidad.
-- Estamos comprometidos con la innovación y la mejora continua para garantizar que nuestros clientes siempre reciban lo mejor.
+📌 **Variables que tienen mas peso en el modelo**:  
 
-## Contacto
-
-Si deseas más información sobre nuestros productos y el proceso de selección, no dudes en contactarnos.
-
-- **🌐 Sitio Web**: [www.pytachos.com](http://www.pytachos.com)
-- **✉️ Correo Electrónico**: contacto@pytachos.com
-- **📞 Teléfono**: +123 456 789
+<div style="text-align: center;">
+  <img src="data/images/feature_importance.png" alt="Heat_map_correlaciones" />
+</div>
 
 
+---
+  
+### **Impacto en el Negocio**
+El tiempo de un combate tiene un impacto directo en los ingresos y la experiencia del evento. Algunas posibles transformaciones del tiempo en valor incluyen:  
+
+<div style="text-align: center;">
+  <img src="data/images/Time_is_gold.png" alt="Heat_map_correlaciones" />
+</div>
+
+- ⏳ **Más anuncios entre rounds:** Combates más largos permiten incluir más cortes comerciales, incrementando las ganancias por publicidad.  
+
+- 🎭 **Mejora del espectáculo:** La predicción precisa de la duración ayuda a optimizar la planificación de veladas, asegurando que sean más atractivas y entretenidas para el público.  
+
+- 🏟️ **Optimización logística:** Conocer la duración promedio de los combates puede optimizar el uso del lugar del evento, reduciendo costos o aumentando el retorno de inversión.  
+
+- 🎲 **Mejora en las apuestas:** Una predicción más precisa mejora la experiencia de usuario en las casas de apuestas, incrementando la confianza y la fidelidad de los apostadores.  
+
+- 🥊 **Preparación de peleadores:** Al conocer de antemano cuánto puede durar un combate, los peleadores pueden ajustar su estrategia y entrenamiento, incrementando la calidad de los enfrentamientos.  
+
+
+
+---
+
+## 🛠️ **Próximos Pasos**
+
+<div style="text-align: center;">
+  <img src="data/images/next.jpg" alt="Heat_map_correlaciones" />
+</div>
+
+1. ✨ **Mejorar el Feature Engineering**: Refinar las variables existentes e incluir interacciones entre características.  
+
+2. 🧪 **Probar nuevos modelos**: Evaluar alternativas o combinaciones para optimizar el desempeño. 
+
+3. 🔄 **Incluir nuevas variables**: Incorporar datos adicionales que puedan mejorar las predicciones. 
+
+4. 🤖 **Explorar técnicas de Deep Learning**: Probar redes neuronales profundas para capturar patrones complejos.  
+
+5. 🗣️ **Obtener Feedback de Negocio**: Validar el modelo con stakeholders para asegurar su utilidad en contextos reales.  
+
+6. 🌐 **Desplegar el modelo con Streamlit**: Crear una interfaz interactiva para probar el modelo y permitir su uso práctico.
+
+---
+&nbsp;
+
+## 📂 **Contenido del Repositorio**
+
+El repositorio incluye las siguientes carpetas y archivos principales:  
+
+### 📁 **app_streamlit**  
+- `app.py`: Script para desplegar el modelo en Streamlit.  
+- `requirements.txt`: Especifica las versiones de las bibliotecas necesarias para el entorno.  
+
+### 📁 **data**  
+- `images/`: Carpeta con imágenes utilizadas en visualizaciones o reportes.  
+- `data_processed/`: Datos procesados para el entrenamiento del modelo.  
+- `raw_data/`: Datos originales sin procesar.  
+- `data_test/`: Conjunto de datos para pruebas finales.  
+- `data_train/`: Conjunto de datos utilizado para entrenamiento.  
+
+### 📁 **docs**  
+- `presentacion_negocio.pdf`: Presentación enfocada en los aspectos de negocio.  
+- `presentacion_tecnica.pdf`: Presentación detallada de aspectos técnicos del proyecto.  
+
+### 📁 **models**  
+- `ufc_model.pkl`: Modelo final entrenado listo para ser utilizado.  
+- `model_config.yaml`: Archivo de configuración con los parámetros y metadatos del modelo.  
+
+### 📁 **notebooks**  
+- `fuentes.ipynb`: Análisis y exploración de fuentes de datos.  
+- `limpieza.ipynb`: Proceso de limpieza y transformación de los datos.  
+- `entrenamiento.ipynb`: Entrenamiento y evaluación de los modelos.  
+
+### 📁 **src**  
+- `data_processing.py`: Funciones para preprocesar los datos.  
+- `evaluation.py`: Métricas y evaluaciones del desempeño del modelo.  
+- `training.py`: Scripts para entrenar los modelos de Machine Learning.  
 
