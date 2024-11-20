@@ -1,7 +1,7 @@
 #  **Predicción de Duración de Combates en UFC 🥋**
 
 <div style="text-align: center;">
-  <img src="data/images/ilia_vs_Max.png" alt="Heat_map_correlaciones" />
+  <img src="data/images/Ilia_vs_Max.png" alt="Heat_map_correlaciones" />
 </div>
 
 ## ✍️ **Descripción del Proyecto**
