@@ -80,7 +80,7 @@ El tiempo de un combate tiene un impacto directo en los ingresos y la experienci
 
 ---
 
-## 🛠️ **Próximos Pasos**
+
 
 <div style="text-align: center;">
   <img src="data/images/next.jpg" alt="Heat_map_correlaciones" />

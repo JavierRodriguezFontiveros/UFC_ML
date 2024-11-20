@@ -1,0 +1,36 @@
+modelo:
+  nombre: RandomForestRegressor
+  descripcion: Modelo Random Forest optimizado para predecir el tiempo de combate.
+
+parametros:
+  n_estimators: 200           # Número de árboles en el bosque
+  max_depth: 10               # Profundidad máxima de cada árbol
+  min_samples_split: 5        # Mínimo de muestras para dividir un nodo
+  random_state: 42            # Semilla para reproducibilidad
+
+entrenamiento:
+  datos:
+    ruta_train: "../data/train/train.csv"
+    columnas_predictoras:      
+      - r_kd
+      - b_kd
+      - r_str
+      - b_str
+      - r_td
+      - b_td
+      - r_sub
+      - b_sub
+      - weight_class
+    columna_objetivo: "time"
+  validacion:
+    test_size: 0.2             
+    random_state: 42
+
+evaluacion:
+  metricas:
+    mean_absolute_error: !!float {mae_rf}  
+    mean_squared_error: !!float {mse_rf}  
+
+modelo_guardado:
+  ruta: "../models/ufc_model.pkl"          
+  formato: "pickle"
