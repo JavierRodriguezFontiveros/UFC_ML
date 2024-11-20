@@ -131,5 +131,5 @@ metrics_media = metrics_media.merge(weight_class_final, on='fighter', how='left'
 #Elimino la categoría de pelea 1 ya que solo habia un peleador entre los 29 escogidos
 metrics_media = metrics_media[metrics_media["weight_class"] != 1]
 
-metrics_media.to_csv("../data/processed/metrics_media_1.csv")
+# metrics_media.to_csv("../data/processed/metrics_media.csv")
 
